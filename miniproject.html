@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the description of the web page">
+    <meta name="keywords" content="HTML, CSS, Javascript">
+    <meta name="author" content="kriti">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Word Game</title>
+</head>
+<body>
+   <div class="m"><h1 class="animate__animated animate__bounce">Let's play the word game.</h1></div>
+   
+    <div class="container">
+        <h1 id="welcome-message"></h1>
+         <div id="game-container">
+            <p id="jumbled-word" class="jumbled-word"></p>
+            <input type="text" id="user-input" placeholder="Enter your answer...">
+            <button id="submit" onclick="checkAnswer()">Submit</button>
+            <p id="result"></p>  
+            <p id="score"></p>
+            <button onclick="playAgain()">Play Again</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Word Game | Designed by  &hearts; kriti sharma  &hearts;</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
